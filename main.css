@@ -9,14 +9,15 @@
 display: flex;
 flex-flow: wrap;
     align-content: space-between;
-    /* justify-content: space-between; */
-    margin: 20px auto;
+    justify-content: space-around;
+        /* margin: 20px auto; */
 }
 hr{
     border: 1px solid #eee;
 }
 .game-info{
     display: flex;
+    margin: 0px 50px;
 }
 .game-info .game-name{
     flex: 1
@@ -33,7 +34,7 @@ hr{
 .hangman-draw {
     background-color: #f8f8f8;
     padding: 20px;
-    height: 324px;
+    height: 424px;
     width: 500px;
 }
 .hangman-draw .the-draw{
@@ -186,6 +187,7 @@ hr{
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 12px;
+    
 }
 .letters .letter-box.clicked{
     background-color: #222;
@@ -193,6 +195,8 @@ hr{
     pointer-events: none;
 }
 .letters-guess{
+    display: flex;
+        flex-wrap: wrap;
     margin: 10px;
     background-color: #f8f8f8;
     padding: 20px;
@@ -205,8 +209,9 @@ hr{
     background: none!important;
 }
 .letters-guess span{
-    width: 60px;
-    height: 60px;
+margin: 3px;
+    min-width: 60px;
+    min-height: 60px;
     font-size: 24px;
     margin-right: 10px;
     text-align: center;
