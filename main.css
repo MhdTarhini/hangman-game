@@ -10,7 +10,6 @@ display: flex;
 flex-flow: wrap;
     align-content: space-between;
     justify-content: space-around;
-        /* margin: 20px auto; */
 }
 hr{
     border: 1px solid #eee;
@@ -207,6 +206,7 @@ hr{
 .with-space{
     border-bottom: white!important;
     background: none!important;
+    background-color: #94f5eb !important;
 }
 .letters-guess span{
 margin: 3px;
