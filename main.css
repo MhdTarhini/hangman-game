@@ -3,10 +3,14 @@
 }
 .container{
     margin: 20px auto;
-    width:1000px;
+    height: max-content;
 }
 .row{
-    display: flex;
+display: flex;
+flex-flow: wrap;
+    align-content: space-between;
+    /* justify-content: space-between; */
+    margin: 20px auto;
 }
 hr{
     border: 1px solid #eee;
@@ -26,11 +30,11 @@ hr{
     color:#e91e63;
     font-weight: bold;
 }
-.hangman-draw{
-    flex:1;
+.hangman-draw {
     background-color: #f8f8f8;
     padding: 20px;
     height: 324px;
+    width: 500px;
 }
 .hangman-draw .the-draw{
     width:60px;
@@ -164,12 +168,12 @@ hr{
     opacity: .2;
     pointer-events: none;
 }
-.letters{
-    flex:1;
+.letters {
     background-color: #f8f8f8;
     padding: 20px;
-    height: 324px;
+    height: 424px;
     text-align: center;
+    width: 500px;
 }
 .letters .letter-box{
     width: 55px;
